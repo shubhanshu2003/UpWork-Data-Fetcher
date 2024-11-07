@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Upwork Profile Data Fetcher",
+    "version": "1.0",
+    "description": "Fetches and displays profile data from Upwork.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.upwork.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
